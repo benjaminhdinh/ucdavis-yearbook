@@ -1,0 +1,561 @@
+hv
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#main{
+  height: 100%;
+}
+body {
+  font-family: Open Sans;
+  line-height: 1.5em;
+  background-repeat: no-repeat;
+/*   background-position: top; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://cdn.glitch.com/bbaa4d66-de0f-4cf4-872f-c1e7a17a4675%2Fabout-uc-davis.jpg?v=1591263655961);
+}
+.opaque{
+/*   position: fixed; */
+  width: 100%;
+  min-height: 100vh;
+/*   height: 100%; */
+  background-color: rgba(255,255,255, 0.35);
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  background-color: #3F3677;
+  height: 80px;
+}
+.resultsHeader{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  background-color: white;
+  align-items: center;
+  min-height: 80px;
+}
+#resultsText{
+  font-size: 28px;
+  font-weight: 700;
+/*   margin-top: 30px; */
+  margin-left: 20px;
+  color:black;
+}
+ul {
+  list-style-type: circle;
+  margin: 10px;
+  padding-left: 30px;
+}
+input{
+  font-family:Open Sans;
+  padding-left: 5px;
+  font-weight: 200;
+}
+h1 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: white;
+}
+
+p {
+  margin: 10px;
+}
+
+div.davisImage {
+  content:url(https://cdn.glitch.com/bbaa4d66-de0f-4cf4-872f-c1e7a17a4675%2Fucdavis_logo_gold_0.png?v=1591140972682);
+  height: 40%;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+h3 {
+  font-weight: bold;
+  color: white;
+  font-size: x-large;
+  padding-bottom: 15px;
+}
+div.pageWrapper{
+  margin-top: 60px;
+}
+div.overlayWrapper{
+  display: flex;
+  background-color: #3F3677;
+  flex-direction: column;
+  max-width: 450px;
+  align-content: center;
+  margin: auto;
+  padding: 15px;
+}
+
+div.overlay {
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+}
+
+div.prompts {
+  font-size:14px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+div.answers {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+label.input{ 
+  margin:2.5px;
+}
+label#image{
+  cursor:pointer;
+}
+input.nameinput {
+  background-color: #1E1A37;
+  color: white;
+  max-width: 275px;
+  height: 20px;
+  border: 0px;
+  padding: 3px;
+  margin: 3.5px;
+}
+
+select.searchDropDown{
+  font-family:Open Sans;
+  font-size:14px;;
+  max-width: 275px;
+  margin: 3.5px;
+  background-color: #1E1A37;
+  color: white;
+  padding-left: 3px;
+}
+
+#inputline {
+  display: flex;
+  flex-direction: row;
+}
+
+div.searchWrapper{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 40px;
+  right:40px;
+  height: 100px;
+  background-color: #3F3677;
+  width: 450px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.searchText{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  color: white;
+  font-size: 16px;
+}
+
+div.searchButtons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+}
+
+.searchBar{
+  cursor:pointer;
+  height: 30px;
+  width: 200px;
+  margin-right:10px;
+  background-color: #1E1A37;
+}
+
+.searchIconWrapper{
+  background-color: #1E1A37;
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  content:url(https://cdn.glitch.com/bbaa4d66-de0f-4cf4-872f-c1e7a17a4675%2Fsearch-icon.png?v=1591161519995);
+}
+
+#loginStartButton{
+  background-color: #1E1A37;
+  height: 30px;
+  width: 100px;
+  color: white;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  cursor:pointer;
+  font-size: large;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#portraitBox {
+  background-color: #ffffff;
+  width: 400px;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+input#fileChooser {
+  display: none;
+}
+
+.imageUpload {
+  height: 200px;
+  width: 200px;
+  background-color: #3F3677;
+  font-family: Open Sans;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+#imageUpload{
+  max-height: 200px;
+  border: 2px solid black;
+}
+
+.profileCreator{
+  width: 750px;
+  background-color: white;
+  margin-top: 30px;
+  min-height: 575px;
+}
+
+.profileCreator1{
+  width: 750px;
+  background-color: white;
+  margin-top: 30px;
+  min-height: 575px;
+}
+
+
+.creatorWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.topHalfWrapper{
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 50px;
+  padding: 20px;
+}
+
+.bottomHalfWrapper{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headersTop{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-left: 10px;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.inputTop{
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  font-weight: normal;
+}
+.profilePage{
+  background-color: #ECECEC;
+  width: 350px;
+  color: black;
+  margin-bottom: 20px;
+  border: none;
+  height: 23px;
+}
+
+.bottomHalfWrapper{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.headersBottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  width: 200px;
+}
+
+.inputBottom{
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  justify-content: space-between;
+  font-weight: normal;
+  width: 400px;
+}
+
+.profilePageBio, .profilePageBioMobile{
+  font-family: Open Sans;
+  margin: auto;
+  background-color: #ECECEC;
+  font-weight: 200;
+  font-size: 15px;
+  color: black;
+  min-height: 150px;
+  width: 650px;
+  margin-top: -15px;
+  padding: 10px;
+}
+
+.profileDropDown{
+  width: 350px;
+  background-color: white;
+  color: black;
+  font-family: Open Sans;
+  margin-bottom: 20px;
+}
+
+#searchDiv{
+  display:flex;
+  justify-content: flex-end;
+}
+#submitDiv{
+  /*position: absolute;
+  bottom: 40px;
+  right: 40px;*/
+  width: 100vw;
+  justify-content: flex-end;
+  margin-top: 40px;
+  display: flex;
+}
+button#submitButton{
+  height: 40px;
+  width: 120px;
+  background-color: #1E1A37;
+  color: white;
+  justify-content: center;
+  font-size: 20px;
+}
+button#searchButton{
+  background-color: #1E1A37;
+  height: 30px;
+  width: 100px;
+  color: white;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 5px;
+  align-content: flex-end;
+}
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+}
+
+#profileBorder{
+/*   width:323px; */
+/*   height: 500px; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #3F3677;
+  margin: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+#profileBorder:hover {
+  
+  box-shadow: 8px 8px 9px #1E1A37;
+}
+
+#profilePic{
+  width: 300px;
+  height: 300px;
+  border: 5px solid white;
+  box-shadow: 3px 3px 7px gray;
+}
+
+#userName{
+  color: white;
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 300px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+#resultDisplay{
+/*   padding: 50px; */
+/*   height: 700px; */
+/*   width: 400px;; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+.topHalfWrapperMobile, .bottomHalfWrapperMobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .searchBar {
+    width: 100px;
+  }
+  div.searchWrapper {
+    /* center */
+    width: 350px;
+  }    
+  select.searchDropDown {
+    width: 175px;
+  }
+  input.nameinput {
+    width: 175px;
+  }
+  div.overlayWrapper {
+    width: 350px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .resultDisplay {
+    /* center */
+    width: 400px;
+  }
+  ul{
+    margin: 0px;
+    left-padding: 0px;
+  }
+  select {
+    margin: 5px;
+  }
+  .profileCreator{
+    width: 95%; 
+    height: 850px;
+    flex-grow: 2;
+  }
+  .profileCreator1{
+    width: 95%; 
+    height: 720px;
+    flex-grow: 2;
+  }
+  .imageUpload {
+    margin:auto;
+    margin-top: 15px;
+  }
+  .profilePageBioMobile {
+    margin: 15px;
+    width: auto;
+  }
+  .headersBottom {
+    width: auto;
+  }
+  .profilePage, .profileDropDown {
+    margin: 1px 10px;
+    width: auto;
+  }
+  .topHalfWrapperMobile, .bottomHalfWrapperMobile {
+    flex-direction: column;
+    display: flex;
+    margin-left: 4px;
+  }
+  .topHalfWrapper, .bottomHalfWrapper, .profilePageBio {
+    display: none;
+  }
+  .creatorWrapper {
+    min-height: 100vh;
+    display: flex;
+  }
+  #submitDiv {
+    /*position: absolute;
+    bottom: 0px;
+    right: 10px; */
+    flex-grow: 1;
+  }
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+#bio{
+  font-weight: normal;
+}
+
+a{
+  text-decoration: none;
+}
+
+.div1{
+  flex-grow: 5;
+}
+
+.div2{
+  flex-grow: 1;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#first1, #last1, #gender1, #college1, #major1, #bio1, #studyspot1, #geclass1, #foodtruck1 {
+  font-weight: normal;
+}
+
+#creatorCaption{
+  width: 100%vw;
+  text-align: center;
+  color: black;
+}
